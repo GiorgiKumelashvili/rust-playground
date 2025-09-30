@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "Alice",
+    "value": 12.34,
+    "active": true,
+    "child": [
+      {
+        "id": 1,
+        "name": "Alice",
+        "value": 12.34,
+        "active": true
+      },
+      {
+        "id": 2,
+        "name": "Bob",
+        "value": 56.78,
+        "active": false
+      },
+      {
+        "id": 3,
+        "name": "Charlie",
+        "value": 99.0,
+        "active": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bob",
+    "value": 56.78,
+    "active": false,
+    "child2": [
+      {
+        "id": 1,
+        "name": "Alice",
+        "value": 12.34,
+        "active": true,
+        "grandchild": {
+          "id": 1,
+          "name": "Alice",
+          "value": 12.34,
+          "active": true
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Charlie",
+    "value": 99.0,
+    "active": true
+  }
+]
