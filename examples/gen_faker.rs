@@ -15,6 +15,7 @@ fn generate_fake_data() -> Vec<String> {
     let sanitize = |s: String| s.replace("\n", " ").replace("\r", " "); // Remove newlines
 
     vec![
+        sanitize(fake::uuid::UUIDv7.fake()),
         sanitize(fake::faker::name::en::Name().fake()),
         sanitize(fake::faker::internet::en::SafeEmail().fake()),
         sanitize(fake::uuid::UUIDv4.fake()),
@@ -34,7 +35,7 @@ fn main() {
     // Write header
     writer
         .write_record(&[
-            "Name", "Email", "City", "UUID", "Phone", "Company", "Job", "Sentence", "Date", "Bool",
+            "Id", "Name", "Email", "UUID", "Phone", "Company", "Job", "Sentence", "Date",
         ])
         .expect("Failed to write header");
 
