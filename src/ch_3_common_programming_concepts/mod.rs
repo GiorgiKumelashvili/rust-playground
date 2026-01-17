@@ -5,6 +5,6 @@ fn read(y: bool) {
 }
 
 fn main() {
-    read(x); // oh no! x isn't defined!
+    // read(x); // oh no! x isn't defined!
     let x = true;
 }
