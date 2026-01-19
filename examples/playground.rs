@@ -1,5 +1,5 @@
 use rust_playground::playground;
 
 fn main() {
-    playground::main();
+  playground::main();
 }
