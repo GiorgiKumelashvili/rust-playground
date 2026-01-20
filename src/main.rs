@@ -1,3 +1,5 @@
+use rust_playground::ch5_structs;
+
 fn main() {
-  println!("Hello, world!");
+  ch5_structs::main();
 }
