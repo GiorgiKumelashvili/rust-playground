@@ -1,5 +1,5 @@
-use rust_playground::ch5_structs;
+use rust_playground::*;
 
 fn main() {
-  ch5_structs::main();
+  ch_6_enums::main();
 }
